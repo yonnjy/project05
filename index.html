@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
 </head>
 
@@ -26,11 +28,49 @@
                 </h1>
                 <nav class="gnb">
                     <ul>
-                        <li><a href="">회사소개</a></li>
-                        <li><a href="">제품안내</a></li>
-                        <li><a href="">홍보센터</a></li>
-                        <li><a href="">사회공헌</a></li>
-                        <li><a href="">고객의소리</a></li>
+                        <li>
+                            <a href="">회사소개</a>
+                            <ul class="sub">
+                                <li><a href="">동서식품</a></li>
+                                <li><a href="">산업안전보건방침</a></li>
+                                <li><a href="">식품안전센터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">제품안내</a>
+                            <ul class="sub">
+                                <li><a href="">브랜드</a></li>
+                                <li><a href="">제품소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">홍보센터</a>
+                            <ul class="sub">
+                                <li><a href="">뉴스</a></li>
+                                <li><a href="">이벤트</a></li>
+                                <li><a href="">홍보영상</a></li>
+                                <li><a href="">레시피</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">사회공헌</a>
+                            <ul class="sub">
+                                <li><a href="">동서문학상</a></li>
+                                <li><a href="">입신최강전</a></li>
+                                <li><a href="">커피 클래식</a></li>
+                                <li><a href="">사랑의 향기</a></li>
+                                <li><a href="">꿈의 도서관</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">고객의소리</a>
+                            <ul class="sub">
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">고객센터</a></li>
+                                <li><a href="">기타문의</a></li>
+                                <li><a href="">CCM</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <button>
@@ -83,7 +123,7 @@
                         <p> 마음과 마음이 이어지는 순간 맥심은 행복을 전해주는 좋은 커피로 다가갑니다. 맥심은 일상 속 작은 휴식과 여유이며, 새로운 기운을 불어 넣어줍니다.</p>
                     </div>
                     <div class="event_wrap">
-                        <figure>
+                        <figure data-aos="zoom-in">
                             <a href="">
                                 <div class="img_box">
                                     <img src="./images/maxim01.png" alt="맥심 모카골드 마일드">
@@ -91,7 +131,7 @@
                                 <h3>맥심 모카골드 마일드</h3>
                             </a>
                         </figure>
-                        <figure>
+                        <figure data-aos="zoom-in" data-aos-delay="300">
                             <a href="">
                                 <div class="img_box">
                                     <img src="./images/maxim02.png" alt="맥심 화이트골드">
@@ -99,7 +139,7 @@
                                 <h3>맥심 화이트골드</h3>
                             </a>
                         </figure>
-                        <figure>
+                        <figure data-aos="zoom-in" data-aos-delay="600">
                             <a href="">
                                 <div class="img_box">
                                     <img src="./images/maxim03.png" alt="맥심 오리지날">
@@ -107,7 +147,7 @@
                                 <h3>맥심 오리지날</h3>
                             </a>
                         </figure>
-                        <figure>
+                        <figure data-aos="zoom-in" data-aos-delay="900">
                             <a href="">
                                 <div class="img_box">
                                     <img src="./images/maxim04.png" alt="맥심 슈프림골드">
@@ -134,8 +174,8 @@
                                 <li><a href="https://www.dongsuh.com/kor/" target="_blank">(주)동서</a></li>
                                 <li><a href="http://www.maximkanu.co.kr/pc.asp" target="_blank">카누</a></li>
                                 <li><a href="http://www.postopia.co.kr/main/" target="_blank">포스트</a></li>
-                                <li><a href="http://bookclub.dongsuh.co.kr/00_main/main.asp" target="_blank">삶의향기 동서
-                                        문학상</a></li>
+                                <li><a href="http://bookclub.dongsuh.co.kr/00_main/main.asp" target="_blank">삶의향기
+                                        동서문학상</a></li>
                             </ul>
                         </div>
                     </div>
@@ -157,6 +197,9 @@
             <i class="xi-caret-up-min"></i>
         </div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
